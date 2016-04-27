@@ -5,7 +5,13 @@ PROJECT_DIR=$1
 
 # Build artifacts
 cd $PROJECT_DIR
-./gradlew -Dorg.gradle.project.repoDir="$BUILD_DIR" uploadArchives
+if [[ -x "./gradlew" ]]; then
+  GRADLE="./gradlew"
+else
+  GRADLE="gradle"
+fi
+
+$GRADLE -Dorg.gradle.project.repoDir="$BUILD_DIR" uploadArchives
 
 # Create pretty directory listing
 cd $BUILD_DIR
