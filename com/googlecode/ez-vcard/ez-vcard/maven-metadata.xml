@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.googlecode.ez-vcard</groupId>
+  <artifactId>ez-vcard</artifactId>
+  <versioning>
+    <versions>
+      <version>0.10.5-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20181010152236</lastUpdated>
+  </versioning>
+</metadata>
